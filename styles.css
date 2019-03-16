@@ -1,0 +1,57 @@
+/* Load Google Font - PT Sans */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+/* CSS Reset Margin & Padding on everything */
+* { margin: 0; padding: 0; }
+
+html, body {
+  width: 100%; height: 100%;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+/* Image Container */
+.image-container {
+  width: 80%; height: 100%;
+  background: url('https://source.unsplash.com/random/1530×1080/?kenya') center center no-repeat;
+  background-size: cover;
+}
+
+/* Forms Container */
+.forms-container {
+  width: 20%;height: 100%;
+  position: absolute;
+  top: 0; right: 0;
+  background-color: hsl(0,0%, 95%);
+  padding: 50px 15px;
+}
+
+.forms-container input {
+  width: 80%; height: 2.8rem;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0 15px; margin: 5px auto;
+  font-size: .9rem;
+  color: hsl(0, 0%, 25%);
+}
+
+.forms-container button {
+  width: 50%; height: 3rem;
+  margin: 5px 0;
+  border-radius: 6px;
+  border-style: none;
+  background: hsla(145, 63%, 49%, .85);
+  color: hsl(145, 0%, 100%);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.forms-container button:hover { background: hsla(209, 99%, 28%, 1); }
+
+.forms-container a:hover, .forms-container a:active {
+  color: hsl(145, 63%, 49%);
+}
+
+.login-form { display: none; }
